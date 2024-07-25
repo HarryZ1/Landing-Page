@@ -111,6 +111,8 @@
 						<article id="resume">
 							<h2 class="major">Resume</h2>
 							
+
+							<span class="image main">
 							<div id="adobe-dc-view" style="height: 300px; width: 750px;"></div>
 							<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 							<script type="text/javascript">
@@ -126,28 +128,8 @@
 								});
 							  });
 							</script>
+							</span>
 
-
-
-							<div id="adobe-dc-view"></div>
-							<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
-							<script type="text/javascript">
-							// Store the UI options in a constant
-							const previewConfig = {
-							embedMode: "FULL_WINDOW",
-							showDownloadPDF: false,
-							showZoomControl: false
-							}
-
-							document.addEventListener("adobe_dc_view_sdk.ready", function () {
-							var adobeDCView = new AdobeDC.View({clientId: "7bfc12fbb3e84b69bb527ceefb80155b", divId: "adobe-dc-view"});
-							// Consume previewConfig here. . .
-							adobeDCView.previewFile({
-								content:{location: {url: "https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
-								metaData:{fileName: "Bodea Brochure.pdf"}
-							}, previewConfig);
-							});
-							</script>
 
 							
 
